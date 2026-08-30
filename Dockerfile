@@ -17,7 +17,8 @@
 ################################################################################
 # Build
 ARG JAVA_VERSION=11
-FROM maven:3.8.8-eclipse-temurin-${JAVA_VERSION} AS build
+FROM maven:3.9.9-eclipse-temurin-${JAVA_VERSION} AS build
+#FROM amazoncorretto:3.9.16-amazoncorretto-11-debian AS build
 ARG SKIP_TESTS=true
 ARG HTTP_CLIENT=okhttp
 
